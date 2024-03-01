@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="css/eduford_img/logo.png "></a> 
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="faculty.html">FACULTY</a></li>
+              <li><a href="departments.html">DEPARTMENT</a></li>
+              <li><a href="registration.html">REGISTRATION</a></li>
+              <li><a href="payments.html">PAYMENTS</a><li></li>
+              <li><a href="timetables.html">TIMETABLE</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        </div>
+    <h1>Registor Now!</h1>
+</section>
+<section>
+          <div class="text-overlay">
+            <form action="register.php" method="post">
+              <h2>Fill this form with the required Information.</h2>
+              <fieldset>
+                <legend><b>Basic Info</b></legend>
+                <label for="fname">First Name: <input type="text" name="fname" id="fname" placeholder="Enter your fist name" required></label>
+                <label for="lname">Last Name: <input type="text" name="lname" id="lname" placeholder="Enter your last name" required></label>
+                <label for="birthDate">Date Of Birth: <input type="date" name="dob" id="birthDate"></label>
+
+              </fieldset>
+              <fieldset>
+                <label >Your Faculty: 
+                  <select>
+                    <option value="" id="default" placeholder="select you department"></option>
+                    <option value="1" id="1">Applied Science And Technology</option>
+                    <option value="2" id="2">Health Science</option>
+                    <option value="3" id="3">Creative Art</option>
+                    <option value="4" id="4">Engineering</option>
+                  </select></label>
+              </fieldset>
+              <fieldset>
+                <legend><b>Additional info</b></legend>
+                <lebel>Student Number: <input type="number" name="stuNum" placeholder="e.g 05224136..." id="stuNum"></lebel>
+                <label for="profile-picture">Upload your picture: <input type="file" name="pfile" id="profile-picture"></label>
+                <label for="email">E-mail: <input type="email" name="email" id="email"></label>
+                <label>Tel Number: <input type="number" name="phoneNum" id="phoneNum"></label>
+              </fieldset>
+              <input type="submit" value="Registor">
+            </form> 
+        </div>
+      </div>
+    </section>
+</body>
+</html>

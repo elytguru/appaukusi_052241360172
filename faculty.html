@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="css/eduford_img/logo.png "></a> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="departments.html">DEPARTMENT</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+                    <li><a href="payments.html">PAYMENTS</a><li></li>
+                    <li><a href="timetables.html">TIMETABLE</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>APPLIED SCIENCE AND TECHNOLOGY</h1>
+    </section>
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Applied science and technology</h1>
+                <p>The Faculty of Applied Science and Technology offers a range of innovative programs designed to equip students with the practical skills and theoretical knowledge needed to excel in today's rapidly evolving industries. Our faculty is comprised of experienced professionals and researchers who are dedicated to providing a dynamic learning environment that fosters creativity, critical thinking, and collaboration.<br><br>
+
+                    Our programs cover a wide range of disciplines, including engineering, computing, and technology, with a focus on hands-on learning and real-world applications. Students have access to state-of-the-art facilities and laboratories, where they can apply their knowledge in a practical setting.</p>
+                <a href="registration.html" class="hero-btn red-btn">JOIN US</a>
+            </div>
+            <div class="about-col">
+                <img src="css/eduford_img/about.jpg">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Kusi University, we are committed to providing a world-class education that prepares our students for success in their chosen fields. With a focus on academic excellence, practical learning, and industry partnerships, we strive to equip our students with the skills and knowledge needed to thrive in today's competitive world.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-intagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Website Designed by Kofi Kusi Appau<i class="fa fa heart-o"></i></p>
+    
+    </section>
+    <script>
+        var navLinks =  document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.stylw.right = '-200px';
+        }
+    </script>
+</body>
+</html>

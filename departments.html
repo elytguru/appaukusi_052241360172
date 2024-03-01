@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header1">
+        <nav>
+            <a href="index.html"><img src="css/eduford_img/logo.png "></a> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="departments.html">DEPARTMENT</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+                    <li><a href="payments.html">PAYMENTS</a><li></li>
+                    <li><a href="timetables.html">TIMETABLE</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>COMPUTER SCIENCE DEPARTMENT</h1>
+    </section>
+    <!-- DEPARTMENT -->
+    <section class="course">
+      <h1>Programs We Offer</h1>
+      <p>Welcome to the Computer Science Department at [University Name], where innovation and discovery are at the core of our mission. Our department offers a vibrant and dynamic environment for students interested in pursuing cutting-edge research and exploring the exciting world of computing. Our world-class faculty are experts in a wide range of areas, including artificial intelligence, cybersecurity, data science, and software engineering.<br>
+        Whether you are interested in pursuing a career in industry or academia, the Computer Science Department at [University Name] is committed to providing you with the skills and knowledge you need to succeed. Join us and be a part of shaping the future of computing!</p>
+
+      <div class="row">
+          <div class="course-col">
+              <h3>Btech Computer Technology</h3>
+              <p>Deep dive into computer systems and technology, covering computer architecture, operating systems, networking, and cybersecurity, preparing graduates for roles in IT infrastructure management, systems analysis, and software engineering.</p>
+              
+          </div>
+          <div class="course-col">
+              <h3>Btech Artificial Intelligence</h3>
+              <p>Focuses on AI technologies like machine learning, neural networks, natural language processing, and robotics, preparing students for roles in AI research, data science, or AI software development.</p>
+          </div>
+          <div class="course-col">
+              <h3>HND Computer Science</h3>
+              <p>Comprehensive curriculum in computer science, including programming, software development, computer systems, and network management, ideal for careers in software development, systems analysis, or IT management.</p>
+          </div>
+          <div class="course-col">
+            <h3>Diploma in Information Technology</h3>
+            <p>Foundational program covering computer systems, programming, database management, and network administration, preparing students for entry-level IT roles or further study.</p>
+        </div>
+      </div>
+  </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Kusi University, we are committed to providing a world-class education that prepares our students for success in their chosen fields. With a focus on academic excellence, practical learning, and industry partnerships, we strive to equip our students with the skills and knowledge needed to thrive in today's competitive world.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-intagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Website Designed by Kofi Kusi Appau<b><i class="fa fa heart-o"></i></p>
+    
+    </section>
+    <script>
+        var navLinks =  document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.stylw.right = '-200px';
+        }
+    </script>
+</body>
+</html>
