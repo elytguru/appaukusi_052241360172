@@ -397,5 +397,13 @@ h3 {
     font-size: 14px;
     color: #fff;
 }
+.pay{
+    width: 70%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding-top: 80px;
+}
 
 
